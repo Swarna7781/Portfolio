@@ -1,1 +1,2 @@
-Its a simple frontend project of Portfolio 
+Its a simple frontend project of Portfolio.
+
