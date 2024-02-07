@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+ 
+.header
+{
+    position: fixed;
+    width:100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    font-size: 26px;
+    color: #ededed;
+    text-decoration: solid;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    
+}
+  
+.navbar a:hover{
+    color: #00ced1
+}
+.navbar a::after{
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navbar a:hover::after
+{
+transform: scaleX(1);
+}
+.home
+{
+    height: 100vh;
+    display:flex;
+    background: url('C:\Users\swarnadeep acharya\OneDrive\Tài liệu\HTML\photo.jpg') no-repeat;
+    align-items: center;
+    padding: 10px 5%;
+}
+.home-content {
+    max-width:700px;
+}
+.home-content h1{
+    font-size:40px ;
+    font-weight:500px ;
+}
+.home-content h3
+{
+ font-size: 30px;
+ font-weight: 500;
+ color: darkturquoise;
+}
+.home-content p{
+ margin-top: 10px;
+}
+body{
+     background: #181c1e; 
+    color:#ededed;
+}
+.buttons button{
+    height:55px;
+    width: 120px;
+    border-radius: 10px;
+    border-color: #5db9ee;
+    color: #5db9ee;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-right: 200px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+  background-color:#5db9ee;
+  transition: 0.3s;
+  color: black;
+}
+
+.icons{
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display:flex;
+    justify-content: space-between;
+}
+.icons a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    font-size: 25px;
+    color: grey;
+    text-decoration: none;
+}
+.design .circle
+{
+aspect-ratio: 1;
+position: absolute;
+border-radius: 50%;
+top:50%;
+left:80%;
+transform: translate(-50%,-50%);
+}
+.circle:nth-child(1)
+{
+    background: linear-gradient(#5db9ee,#181c1e);
+    width:30rem;
+}
+.circle:nth-child(2)
+{
+    background: white;
+    width: 25rem;
+    background-image: url("photo.jpg");
+    background-size: 100%;
+    box-shadow: 0 0 1rem #fff;
+
+}
+.span{
+    color: #00ced1;
+}
